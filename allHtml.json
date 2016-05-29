@@ -1,0 +1,110 @@
+{
+  "/Users/joewatkins/Sites/bootstrap-nojs/index.html": {
+    "apiErrors": [],
+    "documentSize": 11623,
+    "globalStats": {
+      "errorDensity": "55",
+      "warningDensity": "3",
+      "allDensity": "58",
+      "stdDev": "187"
+    },
+    "message": "success",
+    "request": {
+      "fragment": "0",
+      "store": "0",
+      "level": "AA",
+      "ref": "1",
+      "importance": "1",
+      "userID": "1884",
+      "responseID": "549e91c24e6a08931068598f310be54e",
+      "projectID": "DEFAULT_PROJECT",
+      "uaString": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36",
+      "docID": "FAD8946F-87F8-9F6B-4B92-D67C45A571F6",
+      "url": "https://tenon.io/api/file.php?docID=FAD8946F-87F8-9F6B-4B92-D67C45A571F6",
+      "certainty": "80",
+      "priority": "0",
+      "waitFor": "",
+      "viewport": {
+        "height": "768",
+        "width": "1024"
+      }
+    },
+    "responseExecTime": "0.77",
+    "responseTime": "2016-05-29T03:16:18+0000",
+    "resultSet": [
+      {
+        "bpID": 15,
+        "certainty": 100,
+        "errorDescription": "A paragraph was found without text in it.  While this tends to have a low severity, it does create an unnecessary nuisance for users of screen readers who are likely to hear the announcement of the empty paragraph as they navigate through content.  If this empty paragraph exists to behave as margin, use CSS for this purpose instead.",
+        "errorSnippet": "&lt;p&gt;&lt;/p&gt;",
+        "errorTitle": "Empty paragraph found",
+        "position": {
+          "column": 5,
+          "line": 259
+        },
+        "priority": 86,
+        "ref": "https://tenon.io/bestpractice.php?bpID=15&tID=76",
+        "resultTitle": "Use CSS to control visual presentation of text",
+        "signature": "b923636388eb8a79a637598ff69b56c0",
+        "standards": [
+          "Web Content Accessibility Guidelines (WCAG) 2.0, Level AA: 1.4.5 Images of Text"
+        ],
+        "tID": 76,
+        "xpath": "/html/body/div[1]/main[1]/div[1]/p[1]"
+      },
+      {
+        "bpID": 53,
+        "certainty": 80,
+        "errorDescription": "This frame has the exact same title attribute value as another. Unless the content within these frames serve the same purpose, they should each have distinct titles.",
+        "errorSnippet": "&lt;iframe id=\"cp_embed_38844da4586849eb226c14dd6af6695f\" src=\"//codepen.io/joe-watkins/embed/38844da4586849eb226c14dd6af6695f?height=389&amp;amp;theme-id=dark&amp;amp;slug-hash=38844da4586849eb226c14dd6af6695f&amp;amp;default-tab=html&amp;amp;user=joe-w",
+        "errorTitle": "Frames have duplicate titles",
+        "position": "",
+        "priority": 89,
+        "ref": "https://tenon.io/bestpractice.php?bpID=53&tID=89",
+        "resultTitle": "Provide clear, informative titles for all Frames and I-Frames",
+        "signature": "7b3963c0a32a61979207f50603be48c7",
+        "standards": [
+          "Web Content Accessibility Guidelines (WCAG) 2.0, Level A: 2.4.1 Bypass Blocks"
+        ],
+        "tID": 89,
+        "xpath": "/html/body/div[1]/main[1]/div[1]/div[2]/iframe[1]"
+      }
+    ],
+    "resultSummary": {
+      "density": {
+        "allDensity": 18,
+        "errorDensity": 18,
+        "warningDensity": 0
+      },
+      "issues": {
+        "totalErrors": 2,
+        "totalIssues": 2,
+        "totalWarnings": 0
+      },
+      "issuesByLevel": {
+        "A": {
+          "count": 1,
+          "pct": 50
+        },
+        "AA": {
+          "count": 1,
+          "pct": 50
+        },
+        "AAA": {
+          "count": 0,
+          "pct": 0
+        }
+      },
+      "tests": {
+        "failing": 2,
+        "passing": 60,
+        "total": 62
+      }
+    },
+    "sourceHash": "418691e29c18c6a09fdf87068403ace6",
+    "status": 200,
+    "clientScriptErrors": [],
+    "code": "success",
+    "moreInfo": "http://tenon.io/documentation/understanding-response-codes.php#success"
+  }
+}

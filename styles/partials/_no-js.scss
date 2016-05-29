@@ -1,0 +1,29 @@
+iframe {
+	margin-top: 30px;
+}
+
+.js .nojs-only {
+	display: none;
+}
+
+// dropdown buttons
+.no-js .dropdown:target .dropdown-menu {
+	display: block;
+}
+
+// checkbox and radio buttons
+.no-js {
+	[data-toggle=buttons]>.btn input[type=checkbox],
+	[data-toggle=buttons]>.btn input[type=radio],
+	[data-toggle=buttons]>.btn-group>.btn input[type=checkbox],
+	[data-toggle=buttons]>.btn-group>.btn input[type=radio]{
+		position: relative;
+		clip: initial;
+		pointer-events: initial;
+	}
+}
+
+// tabs
+.no-js .tab-content .tab-pane {
+	display: block;
+}
