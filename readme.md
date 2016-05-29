@@ -1,2 +1,2 @@
 # Bootstrap nojs
-Bootstrap components that work without JavaScript. Examples of Bootstrap components built using Progressive Enhancement.
+Examples of Bootstrap components built using Progressive Enhancement and that work without JavaScript.
