@@ -65,6 +65,7 @@
             <li>Remove <code>aria-expanded="false"</code> (JS would normally toggle this value)</li>
             <li>Include CSS</li>
           </ol>
+          <p class="text-muted"><strong>Suggestion:</strong> Use JavaScript to rewrite <code>&lt;a&gt;</code> toggle back into <code>&lt;button&gt;</code> for greater usability.</p>
           <div class="dropdown" id="custom-dropdown-id">
             <a href="#custom-dropdown-id" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" id="dropdown-toggle-id">
               Action
@@ -164,6 +165,45 @@
             </div>
           </div>
           <p data-height="700" data-theme-id="dark" data-slug-hash="225758559385a0d257ddd31cbd34e20f" data-default-tab="html" data-user="joe-watkins" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/joe-watkins/pen/225758559385a0d257ddd31cbd34e20f/">nojs-bs - Tabs</a> by Joe Watkins (<a href="http://codepen.io/joe-watkins">@joe-watkins</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+          <hr>
+
+          <!-- modal -->
+          <h3>Modals</h3>
+          <ol>
+            <li>Convert all <code>&lt;button&gt;</code> to <code>&lt;a&gt;</code> add <code>role="button"</code></li>
+            <li>Add unique ID to toggle and <code>.modal</code></li>
+            <li>Point toggle to unique ID on <code>href="#myModal"</code></li>
+            <li>Point close buttons in <code>.modal</code> back to toggle. <code>href="#unique-modal-trigger-id"</code></li>
+            <li>Add backdrop inside <code>.modal</code> e.g.<br>
+                <code>&lt;div class="modal-backdrop fade in nojs-only"&gt;&lt;/div&gt;</code></li>
+            <li>Include CSS</li>
+          </ol>
+          <p class="text-muted"><strong>Suggestion:</strong> Use JavaScript to rewrite <code>&lt;a&gt;</code> toggles back into <code>&lt;button&gt;</code> for greater usability.</p>
+          <!-- Button trigger modal -->
+          <a href="#myModal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" role="button" id="unique-modal-trigger-id">
+            Launch demo modal
+          </a>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-backdrop fade in nojs-only"></div>
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a href="#unique-modal-trigger-id" role="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </a>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maiores aliquid tempore repellendus corrupti, maxime explicabo fuga in ab odio architecto iste, hic, veritatis rerum ex rem dolores reiciendis sint.</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#unique-modal-trigger-id" role="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p data-height="600" data-theme-id="dark" data-slug-hash="46fd617143eb6c8f48668ae55270ab95" data-default-tab="html" data-user="joe-watkins" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/joe-watkins/pen/46fd617143eb6c8f48668ae55270ab95/">nojs-bs - modal</a> by Joe Watkins (<a href="http://codepen.io/joe-watkins">@joe-watkins</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 
 

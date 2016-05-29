@@ -246,4 +246,15 @@ iframe {
 .no-js .tab-content .tab-pane {
   display: block; }
 
+.no-js .modal:target {
+  display: block;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .no-js .modal:target .modal-dialog {
+    -ms-transform: none;
+    transform: none; }
+  .no-js .modal:target .modal-backdrop.in {
+    z-index: -1; }
+
 /*# sourceMappingURL=main.min.css.map */
