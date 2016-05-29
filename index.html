@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="US-en">
+<head>
+  <script>
+    // document.documentElement.className = document.documentElement.className.replace("no-js", "js");
+  </script>
+  <meta charset="utf-8">
+  <title>Boilerplate</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" media="all">
+  <link rel="stylesheet" href="styles/main.min.css" media="only screen">
+  <link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/assets/css/docs.min.css">
+
+</head>
+
+<body>
+
+  <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="site-wrapper">
+
+    <div class="bd-pageheader">
+      <div class="container">
+        <h1>Bootstrap no-js</h1>
+        <p class="lead">
+          A group of Bootstrap components that work without JavaScript.
+        </p>
+      </div>
+    </div>
+
+    <main role="main" tabindex="0" id="main-content">
+
+      <div class="container">
+
+        <div class="row">
+        <div class="col-sm-9">
+
+          <p class="lead">Below you will find some components from the Bootstrap framework that work without JavaScript. To test these components be sure to disable JavaScript in your browser. A few HTML modifications may be needed to make each component work.</p>
+
+          <hr>
+
+          <h2>Getting Started</h2>
+          <p>Each component is based off of Bootstrap's HTML but may require minimal markup changes and additional CSS to work without JavaScript. Read instructions for each component.</p>
+
+          <ol>
+            <li>Add a class of <code>no-js</code> to the <code>html</code> tag. e.g. <code>&lt;html class="no-js" lang="US-en"&gt;</code></li>
+            <li>Include the following script inside the <code>&lt;head&gt;</code> of your project.<br><code>&lt;script&gt;document.documentElement.className = document.documentElement.className.replace("no-js", "js");&lt;/script&gt;</code></li>
+          </ol>
+
+          <hr>
+
+          <!-- Single button -->
+          <h3 id="ex-dropdowns">Dropdowns</h3>
+          <ol>
+            <li>Use <code>&lt;a&gt;</code> instead of <code>&lt;button&gt;</code> for toggle. This is so we can leverage <code>:target</code> for no-js scenario</li>
+            <li>Add a unique ID to <code>.dropdown</code> wrapper eg. <code>#custom-dropdown-id</code></li>
+            <li>Add a unique ID to toggle e.g. <code>#dropdown-toggle-id</code></li>
+            <li>Add <code>.nojs-only</code> wrapper and a link back to the toggle. e.g. <code>href="#dropdown-toggle-id"</code></li>
+            <li>Remove <code>aria-expanded="false"</code> (JS would normally toggle this value)</li>
+            <li>Include CSS</li>
+          </ol>
+          <div class="dropdown" id="custom-dropdown-id">
+            <a href="#custom-dropdown-id" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" id="dropdown-toggle-id">
+              Action
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+          		<a class="dropdown-item" href="#">Something</a>
+              <span class="nojs-only">
+          			<div class="dropdown-divider"></div>
+              	<a class="dropdown-item" href="#dropdown-toggle-id">Close</a>
+          		</span>
+            </div>
+          </div>
+
+          <p data-height="389" data-theme-id="dark" data-slug-hash="38844da4586849eb226c14dd6af6695f" data-default-tab="html" data-user="joe-watkins" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/joe-watkins/pen/38844da4586849eb226c14dd6af6695f/">nojs-bs - Button</a> by Joe Watkins (<a href="http://codepen.io/joe-watkins">@joe-watkins</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+          <hr>
+
+          <!-- checkbox & radios -->
+          <h3 id="ex-checkboxes-radios">Checkboxes and Radios</h3>
+          <ol>
+            <li>No change to markup</li>
+            <li>Include CSS</li>
+          </ol>
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+            </label>
+            <label class="btn btn-primary">
+              <input type="checkbox" autocomplete="off"> Checkbox 2
+            </label>
+            <label class="btn btn-primary">
+              <input type="checkbox" autocomplete="off"> Checkbox 3
+            </label>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons" style="display: block;">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+            </label>
+          </div>
+
+          <p data-height="470" data-theme-id="dark" data-slug-hash="7c9c484f0a6f4a60f7dafaea3e562020" data-default-tab="html" data-user="joe-watkins" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/joe-watkins/pen/7c9c484f0a6f4a60f7dafaea3e562020/">nojs-bs - Checkboxes - Radios</a> by Joe Watkins (<a href="http://codepen.io/joe-watkins">@joe-watkins</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+
+          <hr>
+
+
+          <!-- tabs -->
+          <h3 id="ex-tabs">Tabs</h3>
+          <ol>
+            <li>No change to markup -- just include CSS</li>
+            <li>Tabs are expanded in nojs scenario</li>
+          </ol>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+            </li>
+          </ul>
+
+          <div class="tab-content" style="margin-top: 25px;">
+            <div class="tab-pane active" id="home" role="tabpanel">
+              <h3>Home</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut mollitia sapiente ipsam magni alias excepturi fuga voluptates, aspernatur, explicabo delectus sed, sit nisi tempora totam a quaerat optio consectetur exercitationem.</p>
+            </div>
+            <div class="tab-pane" id="profile" role="tabpanel">
+              <h3>Profile</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut mollitia sapiente ipsam magni alias excepturi fuga voluptates, aspernatur, explicabo delectus sed, sit nisi tempora totam a quaerat optio consectetur exercitationem.</p>
+            </div>
+            <div class="tab-pane" id="messages" role="tabpanel">
+              <h3>Messages</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut mollitia sapiente ipsam magni alias excepturi fuga voluptates, aspernatur, explicabo delectus sed, sit nisi tempora totam a quaerat optio consectetur exercitationem.</p>
+            </div>
+            <div class="tab-pane" id="settings" role="tabpanel">
+              <h3>Settings</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut mollitia sapiente ipsam magni alias excepturi fuga voluptates, aspernatur, explicabo delectus sed, sit nisi tempora totam a quaerat optio consectetur exercitationem.</p>
+            </div>
+          </div>
+          <p data-height="700" data-theme-id="dark" data-slug-hash="225758559385a0d257ddd31cbd34e20f" data-default-tab="html" data-user="joe-watkins" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/joe-watkins/pen/225758559385a0d257ddd31cbd34e20f/">nojs-bs - Tabs</a> by Joe Watkins (<a href="http://codepen.io/joe-watkins">@joe-watkins</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+
+
+          <!-- END CONTENT -->
+        </div><!-- left col -->
+        <div class="col-sm-3">
+          <h4>Components</h4>
+          <ul class="nav">
+            <li><a href="#ex-dropdowns">Dropdowns</a></li>
+            <li><a href="#ex-checkboxes-radios">Checkboxes &amp; Radios</a></li>
+            <li><a href="#ex-tabs">Tabs</a></li>
+          </ul>
+        </div><!-- right col -->
+        </div>
+
+
+
+
+      </div><!--// .container -->
+
+    </main>
+
+    <footer role="contentinfo"></footer>
+
+  </div><!--// site-wrapper -->
+<!--
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="http://v4-alpha.getbootstrap.com/assets/js/vendor/tether.min.js"></script>
+  <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
+-->
+</body>
+
+</html>
