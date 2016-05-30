@@ -29,6 +29,9 @@ iframe {
 }
 
 // modals
+.js .modal .nojs-only {
+	display: none;
+}
 .no-js .modal:target {
 	display: block;
 	opacity: 1;
