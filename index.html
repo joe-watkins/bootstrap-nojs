@@ -173,7 +173,7 @@
           <!-- modal -->
           <h3 id="ex-modals">Modals</h3>
           <ol>
-            <li>Convert all <code>&lt;button&gt;</code> to <code>&lt;a&gt;</code> add <code>role="button"</code></li>
+            <li>Convert all <code>&lt;button&gt;</code> to <code>&lt;a&gt;</code></li>
             <li>Add unique ID to toggle and <code>.modal</code></li>
             <li>Point toggle to unique ID on <code>href="#myModal"</code></li>
             <li>Point close buttons in <code>.modal</code> back to toggle. <code>href="#unique-modal-trigger-id"</code></li>
@@ -183,7 +183,7 @@
           </ol>
           <p class="text-muted"><strong>Suggestion:</strong> Use JavaScript to rewrite <code>&lt;a&gt;</code> toggles back into <code>&lt;button&gt;</code> for greater usability.</p>
           <!-- Button trigger modal -->
-          <a href="#myModal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" role="button" id="unique-modal-trigger-id">
+          <a href="#myModal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="unique-modal-trigger-id">
             Launch demo modal
           </a>
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -191,7 +191,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <a href="#unique-modal-trigger-id" role="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <a href="#unique-modal-trigger-id" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </a>
                   <h4 class="modal-title" id="myModalLabel">Modal title</h4>
@@ -200,7 +200,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maiores aliquid tempore repellendus corrupti, maxime explicabo fuga in ab odio architecto iste, hic, veritatis rerum ex rem dolores reiciendis sint.</p>
                 </div>
                 <div class="modal-footer">
-                  <a href="#unique-modal-trigger-id" role="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                  <a href="#unique-modal-trigger-id" class="btn btn-secondary" data-dismiss="modal">Close</a>
                 </div>
               </div>
             </div>
